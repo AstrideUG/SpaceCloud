@@ -16,10 +16,3 @@ const val header: String = """
 \_______)|/       |/     \|(_______/(_______/(_______/(_______/(_______)(_______)(______/ 
                                                                                           
 """
-
-fun main() {
-
-    println(header)
-    SpaceCloud.startup()
-
-}

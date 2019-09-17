@@ -1,0 +1,7 @@
+/*
+ * © Copyright by Astride UG (haftungsbeschränkt) 2019.
+ */
+
+dependencies {
+    compile project(":SpaceCloud-Commons")
+}

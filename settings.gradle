@@ -1,2 +1,11 @@
-rootProject.name = 'spacecloud'
+rootProject.name = 'SpaceCloud'
 
+include(
+        "commons",
+        "master",
+        "wrapper"
+)
+
+findProject(":commons")?.name = "${rootProject.name}-Commons"
+findProject(":master")?.name = "${rootProject.name}-Master"
+findProject(":wrapper")?.name = "${rootProject.name}-Wrapper"
