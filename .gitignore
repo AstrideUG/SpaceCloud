@@ -13,7 +13,6 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -72,6 +71,9 @@ cmake-build-*/
 
 # IntelliJ
 out/
+
+#Gradle
+build/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/

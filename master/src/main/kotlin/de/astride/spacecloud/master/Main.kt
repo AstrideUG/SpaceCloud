@@ -10,6 +10,6 @@ fun main() {
 
     println(header)
     println("Starting up master...")
-    SpaceCloud.startup()
+    SpaceMaster.startup()
 
 }

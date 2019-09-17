@@ -5,3 +5,11 @@
 dependencies {
     compile project(":SpaceCloud-Commons")
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': "de.astride.spacecloud.MainKt",
+        )
+    }
+}

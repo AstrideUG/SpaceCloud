@@ -4,16 +4,17 @@
 
 package de.astride.spacecloud.master.server
 
+import de.astride.spacecloud.commons.config.networkConfig
+import de.astride.spacecloud.commons.config.toNetFrameConfig
+import de.astride.spacecloud.commons.protocol.SpaceCloudProtocol
 import de.astride.spacecloud.master.handlers.ServerCreateHandler
 import de.astride.spacecloud.master.handlers.ServerStartHandler
 import de.astride.spacecloud.master.handlers.ServerStopHandler
 import de.astride.spacecloud.master.handlers.WrapperRegisterHandler
-import de.astride.spacecloud.commons.protocol.SpaceCloudProtocol
-import de.piinguiin.netframe.commons.config.NetFrameConfig
 import de.piinguiin.netframe.commons.protocol.Protocol
 import de.piinguiin.netframe.server.NetFrameServerFactory
 
-class MainServer(host: String, ports: Int) {
+class Server(host: String, ports: Int) {
 
     init {
 
@@ -24,11 +25,7 @@ class MainServer(host: String, ports: Int) {
             registerListener(WrapperRegisterHandler())
         }
 
-        val config = NetFrameConfig.newBuilder()
-                .setServerHost(host)
-                .setServerPort(ports)
-                .setProtocol(protocol)
-                .createNetFrameConfig()
+        val config = networkConfig.toNetFrameConfig(protocol)
 
         val server = NetFrameServerFactory.createNetFrameServer(config)
         server.start()

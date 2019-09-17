@@ -4,9 +4,13 @@
 
 package de.astride.spacecloud.wrapper
 
-object SpaceCloud {
+import de.astride.spacecloud.commons.config.createConfigs
+
+object SpaceWrapper {
 
     fun startup() {
+
+        createConfigs()
 
     }
 

@@ -11,6 +11,6 @@ fun main() {
 
     println(header)
     println("Starting up wrapper...")
-    SpaceCloud.startup()
+    SpaceWrapper.startup()
 
 }

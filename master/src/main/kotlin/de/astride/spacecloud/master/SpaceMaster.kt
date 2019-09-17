@@ -4,10 +4,13 @@
 
 package de.astride.spacecloud.master
 
-object SpaceCloud {
+import de.astride.spacecloud.commons.config.createConfigs
+
+object SpaceMaster {
 
     fun startup() {
 
+        createConfigs()
 
     }
 
