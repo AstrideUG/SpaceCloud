@@ -2,7 +2,7 @@
  * © Copyright by Astride UG (haftungsbeschränkt) 2019.
  */
 
-package de.astride.spacecloud
+package de.astride.spacecloud.commons
 
 
 const val header: String = """
@@ -16,10 +16,3 @@ const val header: String = """
 \_______)|/       |/     \|(_______/(_______/(_______/(_______/(_______)(_______)(______/ 
                                                                                           
 """
-
-fun main() {
-
-    println(header)
-    SpaceCloud.startup()
-
-}
