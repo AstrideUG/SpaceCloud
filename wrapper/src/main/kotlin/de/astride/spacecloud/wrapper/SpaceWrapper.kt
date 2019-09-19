@@ -5,12 +5,14 @@
 package de.astride.spacecloud.wrapper
 
 import de.astride.spacecloud.commons.config.createConfigs
+import de.astride.spacecloud.wrapper.server.Wrapper
 
 object SpaceWrapper {
 
     fun startup() {
 
         createConfigs()
+        Wrapper()
 
     }
 

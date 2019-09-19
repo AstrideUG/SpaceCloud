@@ -9,13 +9,25 @@ import de.piinguiin.netframe.commons.protocol.packet.NetFramePacket
 import de.piinguiin.netframe.commons.protocol.packet.NetFramePacketMeta
 
 @NetFramePacketMeta(id = 1)
-class StartServerPacket : NetFramePacket{
+class StartServerPacket : NetFramePacket {
 
     override fun read(buffer: NetFrameBuffer?) {
+        println(buffer)
+        println("TEST!")
+        println("TEST!")
+        println("TEST!")
+        println("TEST!")
+        println("TEST!")
+        println("TEST!")
+        println(buffer?.readString())
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
     override fun write(buffer: NetFrameBuffer?) {
+        buffer?.writeString("TEST")
+        println(buffer)
+        println(buffer?.readInt())
+        println("write luhjfdbkjghbfdrgkfdrjbdfjsgf!")
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 

@@ -4,15 +4,17 @@
 
 package de.astride.spacecloud.commons.protocol
 
+import de.astride.spacecloud.commons.packets.StartServerPacket
+import de.astride.spacecloud.commons.packets.StopServerPacket
 import de.piinguiin.netframe.commons.protocol.Protocol
 
 class SpaceCloudProtocol : Protocol() {
 
    init {
 
-       //init packets
-
-       //registerPacket(Packet.class)
+      //init packets
+      registerPacket(StartServerPacket::class.java)
+      registerPacket(StopServerPacket::class.java)
 
    }
 

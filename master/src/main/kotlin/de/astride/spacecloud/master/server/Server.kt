@@ -14,7 +14,7 @@ import de.astride.spacecloud.master.handlers.WrapperRegisterHandler
 import de.piinguiin.netframe.commons.protocol.Protocol
 import de.piinguiin.netframe.server.NetFrameServerFactory
 
-class Server(host: String, ports: Int) {
+class Server {
 
     init {
 
@@ -26,7 +26,6 @@ class Server(host: String, ports: Int) {
         }
 
         val config = networkConfig.toNetFrameConfig(protocol)
-
         val server = NetFrameServerFactory.createNetFrameServer(config)
         server.start()
 

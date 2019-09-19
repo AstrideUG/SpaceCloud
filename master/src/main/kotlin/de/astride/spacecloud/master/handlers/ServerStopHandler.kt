@@ -10,8 +10,8 @@ import de.piinguiin.netframe.commons.protocol.handler.PacketHandlerMethod
 class ServerStopHandler : PacketHandler {
 
     @PacketHandlerMethod
-    fun serverStop(){
-
+    fun serverStop() {
+        println(javaClass.simpleName)
     }
 
 }

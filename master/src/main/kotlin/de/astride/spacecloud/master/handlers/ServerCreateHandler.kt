@@ -10,7 +10,7 @@ import de.piinguiin.netframe.commons.protocol.handler.PacketHandlerMethod
 class ServerCreateHandler : PacketHandler {
 
     @PacketHandlerMethod
-    fun serverCreate(){
+    fun serverCreate() {
 
     }
 
