@@ -3,5 +3,5 @@
  */
 
 dependencies {
-    compile fileTree("libraries")
+    jarLibs fileTree("libraries")
 }

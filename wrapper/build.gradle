@@ -3,7 +3,7 @@
  */
 
 dependencies {
-    compile project(":SpaceCloud-Commons")
+    jarLibs project(":SpaceCloud-Commons")
 }
 
 jar {
