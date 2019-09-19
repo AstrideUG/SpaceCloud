@@ -16,6 +16,7 @@ class ServerStartHandler : PacketHandler {
         println("Hallo")
         println(con)
         println(packet)
+        con.answer(packet)
     }
 
 
