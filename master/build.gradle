@@ -9,7 +9,7 @@ dependencies {
 jar {
     manifest {
         attributes(
-                'Main-Class': "de.astride.spacecloud.MainKt",
+                'Main-Class': "de.astride.spacecloud.master.MainKt",
         )
     }
 }
