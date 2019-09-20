@@ -4,8 +4,7 @@
 
 package de.astride.spacecloud.commons.protocol
 
-import de.astride.spacecloud.commons.handlers.PingHandler
-import de.astride.spacecloud.commons.handlers.WhitelistHandler
+import de.astride.spacecloud.commons.packets.OnlineRequestPacket
 import de.astride.spacecloud.commons.packets.PingPacket
 import de.astride.spacecloud.commons.packets.StartServerPacket
 import de.astride.spacecloud.commons.packets.WrapperRegisterPacket
@@ -19,9 +18,7 @@ class SpaceCloudProtocol : Protocol() {
       registerPacket<PingPacket>()
       registerPacket<StartServerPacket>()
       registerPacket<WrapperRegisterPacket>()
-
-      registerListener(WhitelistHandler())
-      registerListener(PingHandler())
+      registerPacket<OnlineRequestPacket>()
 
    }
 

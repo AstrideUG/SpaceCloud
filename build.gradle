@@ -36,7 +36,7 @@ subprojects {
     }
 
     dependencies {
-        jarLibs 'com.github.Piinguiin:NetFrame:master-SNAPSHOT'
+        jarLibs 'com.github.Piinguiin:NetFrame:6c26fa5'
         jarLibs "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
         jarLibs "org.jetbrains.kotlin:kotlin-reflect"
     }
