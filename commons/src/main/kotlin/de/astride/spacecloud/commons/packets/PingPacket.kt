@@ -13,14 +13,14 @@ import de.piinguiin.netframe.commons.protocol.packet.NetFramePacketMeta
 class PingPacket : NetFramePacket {
 
     @Suppress("EXPERIMENTAL_UNSIGNED_LITERALS")
-    var id: UInt = 0u
+//    var id: UInt = 0u
 
     override fun read(buffer: NetFrameBuffer) {
-        id = buffer.readUnsignedInt().toUInt()
+//        id = buffer.readUnsignedInt().toUInt()
     }
 
     override fun write(buffer: NetFrameBuffer) {
-        buffer.writeLong(id.toLong())
+//        buffer.writeLong(id.toLong())
     }
 
 }

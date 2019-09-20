@@ -4,16 +4,17 @@
 
 package de.astride.spacecloud.commons.handlers
 
+import de.astride.spacecloud.commons.packets.PingPacket
 import de.piinguiin.netframe.commons.protocol.context.NetFramePacketContext
 import de.piinguiin.netframe.commons.protocol.handler.PacketHandler
 import de.piinguiin.netframe.commons.protocol.handler.PacketHandlerMethod
-import de.piinguiin.netframe.commons.protocol.packet.NetFramePacket
 
-class WhitelistHandler : PacketHandler {
+@Suppress("EXPERIMENTAL_API_USAGE")
+class PingHandler : PacketHandler {
 
-    @PacketHandlerMethod
-    fun on(context: NetFramePacketContext, packet: NetFramePacket) {
-        println("Packet received form: ${context.channelHandlerContext.channel().remoteAddress()}")
-    }
+	@PacketHandlerMethod
+	fun on(context: NetFramePacketContext, packet: PingPacket) {
+		println("Ping received form IP: ${context.channelHandlerContext.channel().remoteAddress()}")
+	}
 
 }
