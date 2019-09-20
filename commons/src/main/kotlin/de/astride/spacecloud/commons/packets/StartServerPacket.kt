@@ -8,7 +8,7 @@ import de.piinguiin.netframe.commons.buffer.NetFrameBuffer
 import de.piinguiin.netframe.commons.protocol.packet.NetFramePacket
 import de.piinguiin.netframe.commons.protocol.packet.NetFramePacketMeta
 
-@NetFramePacketMeta(id = 4)
+@NetFramePacketMeta(id = 6)
 class StartServerPacket() : NetFramePacket {
 
     override fun read(buffer: NetFrameBuffer?) {
