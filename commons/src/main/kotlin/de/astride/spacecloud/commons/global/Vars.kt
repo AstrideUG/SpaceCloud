@@ -6,4 +6,4 @@ package de.astride.spacecloud.commons.global
 
 import java.io.File
 
-val rootDir = File("")
+val rootDir = File(".")

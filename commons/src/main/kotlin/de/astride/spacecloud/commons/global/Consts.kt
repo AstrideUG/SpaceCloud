@@ -4,7 +4,10 @@
 
 package de.astride.spacecloud.commons.global
 
-import de.astride.spacecloud.commons.console.*
+import de.astride.spacecloud.commons.console.BLUE
+import de.astride.spacecloud.commons.console.CYAN_BRIGHT
+import de.astride.spacecloud.commons.console.RESET
+import de.astride.spacecloud.commons.console.STRIKETHROUGH
 
 
 const val header: String = """$CYAN_BRIGHT
@@ -20,3 +23,5 @@ const val header: String = """$CYAN_BRIGHT
 const val separatorLine: String = "$BLUE$STRIKETHROUGH                                                                                          $RESET"
 const val templatesFolderName: String = "templates"
 const val configsFolderName = "configs"
+const val dataFolderName = "data"
+const val userDataFolderName = "userdatas"

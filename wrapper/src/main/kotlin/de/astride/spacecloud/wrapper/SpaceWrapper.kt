@@ -5,7 +5,8 @@
 package de.astride.spacecloud.wrapper
 
 import de.astride.spacecloud.commons.config.createConfigs
-import de.astride.spacecloud.commons.handlers.FingerprintsHandler
+import de.astride.spacecloud.commons.handlers.calculateFingerprints
+import de.astride.spacecloud.commons.handlers.saveFingerprints
 import de.astride.spacecloud.wrapper.global.generateFiles
 import de.astride.spacecloud.wrapper.server.Client
 
@@ -18,8 +19,8 @@ object SpaceWrapper {
 
         Client()
 
-        FingerprintsHandler.calculate()
-        FingerprintsHandler.save()
+        calculateFingerprints()
+        saveFingerprints()
 
     }
 

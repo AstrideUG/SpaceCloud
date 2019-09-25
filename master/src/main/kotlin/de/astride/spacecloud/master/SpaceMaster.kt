@@ -5,10 +5,11 @@
 package de.astride.spacecloud.master
 
 import de.astride.spacecloud.commons.config.createConfigs
-import de.astride.spacecloud.commons.handlers.FingerprintsHandler
+import de.astride.spacecloud.commons.handlers.calculateFingerprints
+import de.astride.spacecloud.commons.handlers.saveFingerprints
 import de.astride.spacecloud.master.global.generateFiles
-import de.astride.spacecloud.master.server.Server
 import de.astride.spacecloud.master.global.groups
+import de.astride.spacecloud.master.server.Server
 import de.astride.spacecloud.commons.config.groups as groupsConfig
 
 object SpaceMaster {
@@ -21,8 +22,8 @@ object SpaceMaster {
 
         Server()
 
-        FingerprintsHandler.calculate()
-        FingerprintsHandler.save()
+        calculateFingerprints()
+        saveFingerprints()
 
     }
 

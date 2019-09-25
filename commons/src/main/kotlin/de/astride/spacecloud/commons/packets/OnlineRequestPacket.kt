@@ -9,14 +9,14 @@ import de.piinguiin.netframe.commons.protocol.packet.NetFramePacket
 import de.piinguiin.netframe.commons.protocol.packet.NetFramePacketMeta
 
 @NetFramePacketMeta(id = 8)
-class OnlineRequestPacket @JvmOverloads constructor(var name: String? = null) : NetFramePacket{
+class OnlineRequestPacket @JvmOverloads constructor(var name: String? = null) : NetFramePacket {
 
     override fun read(buffer: NetFrameBuffer?) {
-            name = buffer?.readString() as? String
+        name = buffer?.readString()
     }
 
     override fun write(buffer: NetFrameBuffer?) {
-       // buffer?.writeBoolean(wrapperManager.contains)
+        // buffer?.writeBoolean(wrapperManager.contains)
     }
 
 }

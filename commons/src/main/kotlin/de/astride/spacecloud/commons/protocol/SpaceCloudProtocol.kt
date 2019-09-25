@@ -13,15 +13,15 @@ import de.piinguiin.netframe.commons.protocol.packet.NetFramePacket
 
 class SpaceCloudProtocol : Protocol() {
 
-   init {
+    init {
 
-      registerPacket<PingPacket>()
-      registerPacket<StartServerPacket>()
-      registerPacket<WrapperRegisterPacket>()
-      registerPacket<OnlineRequestPacket>()
+        registerPacket<PingPacket>()
+        registerPacket<StartServerPacket>()
+        registerPacket<WrapperRegisterPacket>()
+        registerPacket<OnlineRequestPacket>()
 
-   }
+    }
 
-   private inline fun <reified T : NetFramePacket> registerPacket(): Unit = registerPacket(T::class.java)
+    private inline fun <reified T : NetFramePacket> registerPacket(): Unit = registerPacket(T::class.java)
 
 }
